@@ -3,7 +3,7 @@ React and Python web-based application for scheduling tasks and receiving remind
 
 ## Table of Contents
 - [MVP](#mvp)
-- [Stretch Goals](#stretchgoals)
+- [Stretch Goals](#stretch-goals)
 
 ## MVP
 - Create Task list for all tasks
