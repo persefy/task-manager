@@ -14,7 +14,7 @@ React and Python web-based application for scheduling tasks and receiving remind
 - If task is marked as completed, strikethrough task's title
 - If task is deleted, remove from history
 - If task is deactivated, remove from activities list
-- Create calendar that captures days [capture 24 hr time slots, ET], weeks, months, years
+- Create calendar that captures days [capture each of 24 hours in time slots by 5 min increments, ET], weeks, months, years
 - Display calendar by day, week, month, or year based on selection
 - Generate schedule based on availability [time slots] duration of task, and priority [based on deadline]
 - Create categories (i.e, sleep)
