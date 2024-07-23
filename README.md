@@ -3,7 +3,7 @@ React and Python web-based application for scheduling tasks and receiving remind
 
 ## Table of Contents
 - [MVP](#mvp)
-- [Stretch Goal Features](#stretchgoalfeatures)
+- [Stretch Goals](#stretchgoals)
 
 ## MVP
 - Create Task list for all tasks
@@ -16,19 +16,21 @@ React and Python web-based application for scheduling tasks and receiving remind
 - If task is deactivated, remove from activities list
 - Create calendar that captures days [capture each of 24 hours in time slots by 5 min increments, ET], weeks, months, years
 - Display calendar by day, week, month, or year based on selection
-- Generate schedule based on availability [time slots] duration of task, and priority [based on deadline]
+- Generate schedule based on availability [time slots'] duration of task, and priority [based on deadline]
 - Create categories (i.e, sleep)
 - Assign color attribute to categories
 - Enable Tasks to be assigned categories
 - Create Desktop view first of app, then mobile
 - Generate report of day's tasks
-- Enable notifications to alert with report of day's tasks
+- Enable email notifications to alert with report of day's tasks
 
   
-## Stretch Goal Features
+## Stretch Goals
+- Enable user management
+- Add login screen
 - Add address to task, and optionally include travel time for duration
 - Allow for time zone expansion/conversion
-- Enhance prioritization algotithm to include logic for small wins (i.e., adding smaller tasks with bigger tasks for likelihood of completion)
+- Enhance prioritization algotithm to include logic for increasing "small wins" (i.e., adding smaller tasks with bigger tasks for likelihood of completion)
 - generate report for day, week, month that captures at a high level completed vs not   
 - Allow for multi-step tasks
 - Assign level of effort layer (mentally taxing, physically taxing, entertainment, social interaction)
