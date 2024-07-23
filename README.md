@@ -1,6 +1,10 @@
 # task-manager
 React and Python web-based application for scheduling tasks and receiving reminders
 
+## Table of Contents
+- [MVP](#mvp)
+- [Stretch Goal Features](#stretchgoalfeatures)
+
 ## MVP
 - Create Task list for all tasks
 - Create filtered lists for Current, Activities, and Completed
@@ -21,7 +25,7 @@ React and Python web-based application for scheduling tasks and receiving remind
 - Enable notifications to alert with report of day's tasks
 
   
-## Future
+## Stretch Goal Features
 - Add address to task, and optionally include travel time for duration
 - Allow for time zone expansion/conversion
 - Enhance prioritization algotithm to include logic for small wins (i.e., adding smaller tasks with bigger tasks for likelihood of completion)
