@@ -7,7 +7,7 @@ React and Python web-based application for scheduling tasks and receiving remind
 
 ## MVP
 - Create Task list for all tasks
-- Create filtered lists for Current, Activities, and Completed
+- Create filtered lists for Recent, Calendar, Open, and Completed
 -  CRUD tasks
 - Assign tasks title, duration, and optionally deadline
 - Mark a task as an activity to enable the option to make active for scheduling
