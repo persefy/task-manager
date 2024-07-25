@@ -2,8 +2,25 @@
 React and Python web-based application for scheduling tasks and receiving reminders
 
 ## Table of Contents
+- [Team](#team)
+- [Trello Board](#trello-board)
+- [Low Fidelity Wireframes](low-fidelity-wireframes)
+- [Component Hierarchy Diagram](#component-hierarchy-diagram)
 - [MVP](#mvp)
 - [Stretch Goals](#stretch-goals)
+
+## Team
+- [Kyle Lugo](https://github.com/kjl56)
+- [Stephanie Cancel](https://github.com/persefy)
+
+## Trello Board
+- [Task Manager Trello](https://trello.com/b/TCpZaEZJ/task-manager)
+
+## Low Fidelity Wireframes
+(coming soon)
+
+## Component Hierarchy Diagram
+(Coming soon)
 
 ## MVP
 - Create Task list for all tasks
