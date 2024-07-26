@@ -17,7 +17,13 @@ React and Python web-based application for scheduling tasks and receiving remind
 - [Task Manager Trello](https://trello.com/b/TCpZaEZJ/task-manager)
 
 ## Low Fidelity Wireframes
-(coming soon)
+Tasks List, Mobile View
+![RecentTasks](./readme-files/RecentTasks.png)
+![CompletedTasks](./readme-files/CompletedTasks.png)
+![TasksMenu](./readme-files/TasksMenu.png)
+
+Menu, Mobile View
+![NavMenu](./readme-files/NavMenu.png)
 
 ## Component Hierarchy Diagram
 Version 1, below
