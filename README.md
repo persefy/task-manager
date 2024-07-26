@@ -20,7 +20,8 @@ React and Python web-based application for scheduling tasks and receiving remind
 (coming soon)
 
 ## Component Hierarchy Diagram
-(Coming soon)
+Version 1, below
+![CHD](./readme-files/CHD.png)
 
 ## MVP
 - Create Task list for all tasks
