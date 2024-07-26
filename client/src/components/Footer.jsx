@@ -1,10 +1,11 @@
-import '../App.css'
+import SwitchBtn from "./SwitchBtn"
 
 function Footer() {
 
   return (
     <>
       <footer>&copy; 2024</footer>
+      <SwitchBtn/>
     </>
   )
 }
