@@ -18,15 +18,18 @@ React and Python web-based application for scheduling tasks and receiving remind
 
 ## Low Fidelity Wireframes
 Tasks List, Mobile View
-<img src="./readme-files/RecentTasks.png" width="215" height="300">
-<img src="./readme-files/CompletedTasks.png" width="215" height="300">
-<img src="./readme-files/TasksMenu.png" width="215" height="300">
+
+<img src="./readme-files/RecentTasks.png" width="220" height="300">
+<img src="./readme-files/CompletedTasks.png" width="220" height="300">
+<img src="./readme-files/TasksMenu.png" width="220" height="300">
 
 Menu, Mobile View
-<img src="./readme-files/NavMenu.png" width="215" height="300">
+
+<img src="./readme-files/NavMenu.png" width="220" height="300">
 
 ## Component Hierarchy Diagram
 Version 1, below
+
 <img src="./readme-files/CHD.png" width="900" height="220">
 
 ## MVP
