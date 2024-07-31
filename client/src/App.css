@@ -1,42 +1,23 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+body, header {
   text-align: center;
 }
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+header a {
+  text-decoration: none;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.month-view {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 10px auto;
+  box-shadow: 3px 5px 5px #ccc;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.week-row-0,.week-row-1, .week-row-2, .week-row-3, .week-row-4, .week-row-5, .week-row-6, .week-row-7 {
+  display: flex;
+  flex-direction: row;
+  width: 100%; 
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.week-row-0 div, .week-row-1 div, .week-row-2 div, .week-row-3 div, .week-row-4 div, .week-row-5 div, .week-row-6 div, .week-row-7 div {
+  border: solid 1px #eee;
+  height: 70px;
+  width: 14%;
 }
