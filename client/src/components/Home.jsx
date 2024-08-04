@@ -1,11 +1,13 @@
+import { Link } from 'react-router-dom'
+
 function Home() {
 
   return (
     <>
     <section>
         <ul>
-            <li><a href="#">Tasks</a></li>
-            <li><a href="#">Calendar</a></li>
+            <li><Link to="/tasks">Tasks </Link></li>
+            <li><Link to="/calendar">Calendar </Link></li>
         </ul>
     </section>
     </>
