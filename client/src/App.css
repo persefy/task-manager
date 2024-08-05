@@ -4,20 +4,23 @@ body, header {
 header a {
   text-decoration: none;
 }
-.month-view {
+.month-view, .year-view, .day-view, .week-view {
   display: flex;
   flex-direction: column;
   width: 90%;
   margin: 10px auto;
   box-shadow: 3px 5px 5px #ccc;
 }
-.week-row-0,.week-row-1, .week-row-2, .week-row-3, .week-row-4, .week-row-5, .week-row-6, .week-row-7 {
+.cal-row-0,.cal-row-1, .cal-row-2, .cal-row-3, .cal-row-4, .cal-row-5, .cal-row-6, .cal-row-7 {
   display: flex;
   flex-direction: row;
   width: 100%; 
 }
-.week-row-0 div, .week-row-1 div, .week-row-2 div, .week-row-3 div, .week-row-4 div, .week-row-5 div, .week-row-6 div, .week-row-7 div {
+.cal-row-0 div {
+  align-content: center;
+}
+.cal-row-0 div, .cal-row-1 div, .cal-row-2 div, .cal-row-3 div, .cal-row-4 div, .cal-row-5 div, .cal-row-6 div, .cal-row-7 div {
   border: solid 1px #eee;
   height: 70px;
-  width: 14%;
+  width: 14.28%;
 }
