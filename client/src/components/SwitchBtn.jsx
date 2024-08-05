@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useEffect, useContext } from "react"
 import DataContext  from "../DataContext.jsx"
+import { Icon } from 'semantic-ui-react'
 
 function SwitchBtn() {
   const { switchBtnDisplay, setSwitchBtnDisplay } = useContext(DataContext)
@@ -29,9 +30,17 @@ function SwitchBtn() {
   return (
     // <div className='switch-btn-wrapper'>
       <div className='switch-button'>
-          <div className='toggle-switch-button switch-to-cal'><Link to="/tasks">Tasks </Link></div>
-          <div className='toggle-switch-button switch-to-tasks'><Link to="/calendar">Calendar </Link></div>
+          <div className='toggle-switch-button switch-to-cal'><Link to="/tasks">
+            {/* Tasks  */}
+            <Icon name='tasks'/></Link>
+          </div>
+
+          <div className='toggle-switch-button switch-to-tasks'><Link to="/calendar">
+          {/* Calendar  */}
+          <Icon name='calendar alternate'/></Link>
+          </div>
       </div>
+
     // </div>
   )
 }
