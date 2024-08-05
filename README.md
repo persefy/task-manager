@@ -30,7 +30,7 @@ Menu, Mobile View
 ## Component Hierarchy Diagram
 Version 1, below
 
-<img src="./readme-files/CHD.png" width="900" height="220">
+<img src="./readme-files/CHD.png" width="900" height="240">
 
 ## MVP
 - Create Task list for all tasks
