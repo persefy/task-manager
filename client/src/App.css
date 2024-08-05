@@ -46,11 +46,15 @@ header a {
   background-color: #fff;
 }
 .toggle-switch-button a {
-  border: solid 1px red;
-  width: 70px;
-  height: 70px;
+  border: solid 1px #ccc;
+  border-radius: 5px;
+  width: 55px;
+  height: 55px;
+  padding-left: 2px;
+  padding-top: 2px;
   display: block;
   align-content: center;
   text-decoration: none;
+  font-size: 25px;
 }
 /* -----SwitchBtn Styling Above------ */
