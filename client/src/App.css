@@ -1,9 +1,18 @@
+/* -----General Styling Below------- */
 body, header {
   text-align: center;
+}
+footer {
+  position: relative;
 }
 header a {
   text-decoration: none;
 }
+.hide {
+  display: none;
+}
+/* -----Calendar Styling Above------- */
+/* -----Calendar Styling Below------- */
 .month-view, .year-view, .day-view, .week-view {
   display: flex;
   flex-direction: column;
@@ -24,3 +33,24 @@ header a {
   height: 70px;
   width: 14.28%;
 }
+/* -----Calendar Styling Above------- */
+/* -----SwitchBtn Styling Below------ */
+.switch-btn-wrapper {
+  display: flex;
+  justify-content: right;
+}
+.switch-button {
+  position:fixed;
+  bottom: 5%;
+  right: 5%;
+  background-color: #fff;
+}
+.toggle-switch-button a {
+  border: solid 1px red;
+  width: 70px;
+  height: 70px;
+  display: block;
+  align-content: center;
+  text-decoration: none;
+}
+/* -----SwitchBtn Styling Above------ */

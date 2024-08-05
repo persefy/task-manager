@@ -1,16 +1,22 @@
-import { useState } from 'react'
+import { useState,useContext } from 'react'
 import Header from "./components/Header"
 import Main from "./components/Main"
 import Footer from "./components/Footer"
+import DataContext  from "./DataContext";
 import './App.css'
 
 function App() {
+  const [switchBtnDisplay, setSwitchBtnDisplay] = useState ({
+    display:'tasks'
+  })
 
   return (
     <>
-      <Header/>
-      <Main/>
-      <Footer/>
+      <DataContext.Provider value={{switchBtnDisplay, setSwitchBtnDisplay}}>
+        <Header/>
+        <Main/>
+        <Footer/>
+      </DataContext.Provider>
     </>
   )
 }
