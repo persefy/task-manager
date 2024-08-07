@@ -58,7 +58,6 @@ Version 1, below
 - Generate report of day's tasks
 - Enable email notifications to alert with report of day's tasks
 
-  
 ## Stretch Goals
 - Enable user management
 - Add login screen
