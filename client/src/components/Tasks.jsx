@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Task from './Task';
 
 const intitialList = [];
 
@@ -32,8 +33,17 @@ function Tasks() {
     setDeadlineTime(event.target.value);
   }
 
+  function getDate() {
+    const today = new Date();
+    const month = today.getMonth() + 1;
+    const year = today.getFullYear();
+    const date = today.getDate();
+    const hour = today.getHours();
+    const minute = today.getMinutes();
+    return `${year}-${month}-${date} ${hour}:${minute}`;
+  }
   function addTask() {
-    const newList = taskList.concat({id: taskID, title: taskName, duration: taskDuration, deadline: [taskDeadlineDate, taskDeadlineTime]});
+    const newList = taskList.concat({id: taskID, title: taskName, duration: taskDuration, deadline: [taskDeadlineDate, taskDeadlineTime], scheduled: false, completed: false, created: getDate()});
     setTasks(newList);
     setName('');
     setID(taskID+1);
@@ -49,17 +59,16 @@ function Tasks() {
         {/*display task list here*/}
           <table>
             <tr>
+              <th>completed?</th>
               <th>Task</th>
               <th>Duration</th>
               <th>Deadline</th>
+              <th>created</th>
+              <th>show in calender?</th>
             </tr>
             {
               taskList.map((task) => (
-                <tr key={task.id}>
-                  <td>{task.title}</td>
-                  <td>{task.duration}</td>
-                  <td>{task.deadline}</td>
-                </tr>
+                <Task task={task} key ={task.id}/>
               ))
             }
           </table>
