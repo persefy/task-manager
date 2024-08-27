@@ -1,9 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import Task from './Task';
+import DataContext from "../DataContext.jsx"
 
 const intitialList = [];
 
 function Tasks() {
+  const { switchBtnDisplay, setSwitchBtnDisplay } = useContext(DataContext);
+
+  useEffect(() => {
+    const setSwitchBtn = () => {
+      setSwitchBtnDisplay({display:'tasks'})
+    }
+    console.log(switchBtnDisplay)
+    setSwitchBtn()
+  }, [])
+
   const [taskList, setTasks] = React.useState(intitialList);
   const [taskID, setID] = React.useState(1);
   const [taskName, setName] = React.useState('');
