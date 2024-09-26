@@ -12,6 +12,28 @@ header a {
   display: none;
 }
 /* -----General Styling Above-------- */
+/* -----Nav Styling Below------------ */
+.nav-icon {
+  display: flex;
+  justify-content: right;
+  margin-right: 10%;
+}
+.nav-icon .button {
+  display: inline-block;
+  width: 35px;
+  padding: 10px 5px 10px 12px;
+}
+.content .menu {
+  margin: 0 auto;
+  border: none;
+  min-width: 350px;
+}
+.content .menu .item {
+  color: #3a76cf;
+  text-align: center;
+  font-size: 1.5rem;
+}
+/* -----Nav Styling Above------------ */
 /* -----Calendar Styling Below------- */
 .month-view, .year-view, .day-view, .week-view {
   display: flex;
