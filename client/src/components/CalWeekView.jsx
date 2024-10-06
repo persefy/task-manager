@@ -1,3 +1,4 @@
+import CalDayView from "./CalDayView"
 function CalWeekView() {
 
     return (
@@ -8,7 +9,7 @@ function CalWeekView() {
             - horizontal scroll through week, showing 2-4 days at a time, based on screen width
           */}   
 
-          <div className="week-view">
+          {/* <div className="week-view">
             <div className="cal-row-0">
               <div>Sun</div>
               <div>Mon</div>
@@ -17,6 +18,10 @@ function CalWeekView() {
               <div></div>
               <div></div>
             </div>
+          </div> */}
+          <div className="week-view">
+            <div><CalDayView/></div>
+            <div><CalDayView/></div>
           </div>
         </section>
       </>

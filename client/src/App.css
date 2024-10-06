@@ -35,10 +35,10 @@ header a {
 }
 /* -----Nav Styling Above------------ */
 /* -----Calendar Styling Below------- */
-.month-view, .year-view, .day-view, .week-view {
+.month-view, .year-view, .day-view {
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 99%;
   margin: 10px auto;
   box-shadow: 3px 5px 5px #ccc;
 }
@@ -57,9 +57,6 @@ header a {
 }
 .day-view .cal-row-0 div, .day-view .cal-row-1 div {
   width: 100%;
-}
-.week-view .cal-row-0 div, .week-view .cal-row-1 div{
-  width: 50%;
 }
 .day-view .cal-row-1 div, .week-view .cal-row-1 div {
   min-height:400px;
@@ -80,21 +77,30 @@ header a {
 }
 /* Day Cal View */
 .day-view .content .hour {
-  border-top: solid 1px rgb(74, 152, 176);
+  border-top: solid 1px #a3bedc;
   min-height: 60px;
   position: relative;
   text-align: left;
 }
 .day-view .content .hour::after {
   content: attr(data-value);
-  padding-left: 15px;
-  color: #3a76cf;
+  padding-left: 10px;
+  color: #8899b2;
+  font-size: 10px;
   background-color: #fff;
-  width: 70px;
+  width: 50px;
   position: absolute;
   top: -10px;
 }
 
+/*  Week Cal View */
+.week-view {
+  display: flex;
+  justify-content: space-around;
+}
+.week-view > div {
+  width: 50%;
+}
 /* -----Calendar Styling Above------- */
 /* -----SwitchBtn Styling Below------ */
 .switch-btn-wrapper {
