@@ -42,7 +42,7 @@ header a {
   margin: 10px auto;
   box-shadow: 3px 5px 5px #ccc;
 }
-.cal-row-0,.cal-row-1, .cal-row-2, .cal-row-3, .cal-row-4, .cal-row-5, .cal-row-6, .cal-row-7 {
+.cal-row-0,.cal-row-1, .cal-row-2, .cal-row-3, .cal-row-4, .cal-row-5 {
   display: flex;
   flex-direction: row;
   width: 100%; 
@@ -50,9 +50,9 @@ header a {
 .cal-row-0 div {
   align-content: center;
 }
-.cal-row-0 div, .cal-row-1 div, .cal-row-2 div, .cal-row-3 div, .cal-row-4 div, .cal-row-5 div, .cal-row-6 div, .cal-row-7 div {
+.cal-row-0 div, .cal-row-1 div, .cal-row-2 div, .cal-row-3 div, .cal-row-4 div, .cal-row-5 div {
   border: solid 1px #eee;
-  height: 70px;
+  min-height: 70px;
   width: 14.28%;
 }
 .day-view .cal-row-0 div, .day-view .cal-row-1 div {
@@ -73,11 +73,28 @@ header a {
   width: 42.5%;
   margin: 15px;
 }
-.year-wrapper .cal-row-0 div, .year-wrapper .cal-row-1 div, .year-wrapper .cal-row-2 div, .year-wrapper .cal-row-3 div, .year-wrapper .cal-row-4 div, .year-wrapper .cal-row-5 div, .year-wrapper .cal-row-6 div, .year-wrapper .cal-row-7 div {
+.year-wrapper .cal-row-0 div, .year-wrapper .cal-row-1 div, .year-wrapper .cal-row-2 div, .year-wrapper .cal-row-3 div, .year-wrapper .cal-row-4 div, .year-wrapper .cal-row-5 div {
   border: solid 1px #eee;
   height: 40px;
   width: 14.28%;
 }
+/* Day Cal View */
+.day-view .content .hour {
+  border-top: solid 1px rgb(74, 152, 176);
+  min-height: 60px;
+  position: relative;
+  text-align: left;
+}
+.day-view .content .hour::after {
+  content: attr(data-value);
+  padding-left: 15px;
+  color: #3a76cf;
+  background-color: #fff;
+  width: 70px;
+  position: absolute;
+  top: -10px;
+}
+
 /* -----Calendar Styling Above------- */
 /* -----SwitchBtn Styling Below------ */
 .switch-btn-wrapper {
