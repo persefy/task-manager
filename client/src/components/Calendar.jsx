@@ -12,7 +12,7 @@ function Calendar() {
     const [activeItem, setActiveItem] = useState('Day')
     const [mounted,setMounted] = useState ({
       'Day': true, //set default cal view to true
-      'Week': false,
+      'Week': true,
       'Month': false,
       'Year': false,
     })
