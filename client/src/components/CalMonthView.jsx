@@ -62,24 +62,6 @@ function CalMonthView() {
               <div></div>
               <div></div>
             </div>
-            <div className="cal-row-6">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <div className="cal-row-7">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
           </div>
         </section>
       </>
