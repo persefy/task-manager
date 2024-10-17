@@ -8,8 +8,9 @@ const db = require('./db/index')
 const cors = require('cors')
 
 //initial declaration of constants for controllers
-const { Task} = require('./models')
+const { Task, Activity} = require('./models')
 const taskController = require('./controllers/taskController')
+const activityController = require('./controllers/activityController')
 
 // require() imports and middleware here ^ ///////
 
@@ -27,12 +28,19 @@ db.on('error', console.error.bind(console, 'MongoDB Atlas connection error:'))
 app.listen(PORT, () => console.log(`Listening on port: ${PORT}`))
 app.get('/', (req, res) => res.send('This is the landing page!'))
 
-//Routes for ContactMsg
+//Routes for Tasks
 app.get('/task', taskController.getAllTasks)
 app.get('/task/:id', taskController.getTaskById)
 app.post('/task', taskController.createTask)
 app.put('/task/:id', taskController.updateTask)
 app.delete('/task/:id', taskController.deleteTask)
+
+//Routes for Activities
+app.get('/activity', activityController.getAllActivities)
+app.get('/activity/:id', activityController.getActivityById)
+app.post('/activity', activityController.createActivity)
+app.put('/activity/:id', activityController.updateActivity)
+app.delete('/activity/:id', activityController.deleteActivity)
 
 //catch error routes
 app.get('*', (req, res) => {
