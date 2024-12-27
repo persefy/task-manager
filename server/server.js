@@ -1,6 +1,7 @@
 // require('dotenv').config()
 
 const express = require('express')
+// const router = express.Router(); //check if needed
 
 const logger = require('morgan')
 const bodyParser = require('body-parser')
@@ -11,6 +12,7 @@ const cors = require('cors')
 const { Task, Activity} = require('./models')
 const taskController = require('./controllers/taskController')
 const activityController = require('./controllers/activityController')
+const scheduleController = require('./controllers/scheduleController');
 
 // require() imports and middleware here ^ ///////
 
@@ -41,6 +43,15 @@ app.get('/activity/:id', activityController.getActivityById)
 app.post('/activity', activityController.createActivity)
 app.put('/activity/:id', activityController.updateActivity)
 app.delete('/activity/:id', activityController.deleteActivity)
+
+//Routes for Schedule
+app.get('/schedules', scheduleController.getAllSchedules);
+app.get('/schedules/:id', scheduleController.getScheduleById);
+app.get('/schedules/date/:date', scheduleController.getSchedulesByDate);
+app.post('/schedules', scheduleController.createSchedule);
+app.put('/schedules/:id', scheduleController.updateSchedule);
+app.delete('/schedules/:id', scheduleController.deleteSchedule);
+app.get('/available-slots', scheduleController.getAvailableSlots);
 
 //catch error routes
 app.get('*', (req, res) => {
